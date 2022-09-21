@@ -1,0 +1,208 @@
+/*Page Styling*/
+html{
+    font-family: "Cormorant Garamond" , sans-serif;
+    font-size: 16px;
+}
+
+
+
+/*Hamburger Menu Styling*/
+nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.ham-bar{
+    width: 70%;
+    height: 5px;
+    background-color: #F372FC;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+.bar-top{
+    top: 25%;
+}
+
+.bar-bottom{
+    top: 75%;
+}
+
+.hamburger-menu.active .bar-top{
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top:50%
+}
+
+.hamburger-menu.active .bar-mid{
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom{
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+}
+.off-screen-menu{
+    position: fixed;
+    top: 0;
+    right: -75%;
+    background-image: url(../Images/1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 100vh;
+    transition: right .5s;
+}
+
+.off-screen-menu.active{
+    right: 0;
+}
+
+.off-screen-menu ul{
+    margin-top:75%;
+}
+
+.off-screen-menu li{
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 2.25rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.off-screen-menu li:hover{
+    background-color: #4a494a;
+}
+
+.off-screen-menu li a{
+    color: #F372FC;
+}
+/*Header Styling*/
+header{
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #b3b3b3;
+    font-size: 1.5rem;
+    z-index: 100;
+    background-image: url(../Images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .header-section{
+    display:flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .page-title{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+.page-title a{
+    display: flex;
+    font-family: "Dancing Script";
+    font-size: 3.75rem;
+    color: #F372FC;
+}
+
+.page-title .b{
+    margin-right: 2rem;
+    font-size: 7rem;
+    margin-left: 4rem;
+}
+
+.page-title .your{
+    margin-top: 1.5rem;
+}
+
+
+
+/*Welcome Styling*/
+.welcome-section{
+    display: flex;
+    padding-top: 35px;
+    width: 100%;
+    height: 600px;
+    background-image: url(../Images/Background\ Image.jpg);
+    background-position: center;
+    text-align: center;
+}
+
+.welcome-title{
+    margin: auto;
+    background-color: #F372FC;
+    width: 100%;
+    opacity: 0.9;
+}
+.welcome-title h2, h4{
+    margin: 0;
+    padding: 5px;
+    letter-spacing: 1.2px;
+}
+
+.welcome{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.best-look{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/*About Styling*/
+.about-section{
+    background-color: #F372FC;
+    
+}
+
+.about-title{
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.about{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.little{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content img{
+    width: 225px;
+    height: 225px;
+}
+
+/*Services Styling*/
+
+/*Our Team Styling*/
+
+/*Footer Styling*/
